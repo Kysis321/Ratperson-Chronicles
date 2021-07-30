@@ -1,6 +1,6 @@
-Kyle;Hey what's up;0;R
-Orien;Nothing much man;0;L
-Kyle;Oh that's cool;1;R
-Player;Restart:line,0;Continue:line,4
-Kyle;This is a test;2;L
-Orien;Test test test test;2;R
+Kyle;Hey what's up;0;L
+Orien;Nothing much man;0;R
+Kyle;Oh that's cool;0;L
+Player;Restart:line,0;Continue:line,4;Loser:line,2;
+Kyle;This is a test;0;L
+Orien;Test test test test;0;R

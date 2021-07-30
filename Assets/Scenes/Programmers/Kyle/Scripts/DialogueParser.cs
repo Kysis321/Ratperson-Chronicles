@@ -36,7 +36,7 @@ public class DialogueParser : MonoBehaviour
     //It also instantiates the lines List which tells the computer to give us memory to store things in the List because we are about to put things in the List.
     void Start()
     {
-        string file = "Assets/Data/Dialogue";
+        string file = "Assets/Scenes/Programmers/Kyle/Dialogue1";
         string sceneNum = EditorApplication.currentScene;
         sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
         file += sceneNum;
