@@ -8,6 +8,11 @@ public class SceneTransition : MonoBehaviour
     public Animator transitionAnim;
     public string sceneName;
 
+    public void Quit()
+    {
+        StartCoroutine(QuitGame());
+    }
+
     public void Transit()
     {
         StartCoroutine(LoadScene());
@@ -18,5 +23,12 @@ public class SceneTransition : MonoBehaviour
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);
+    }
+
+    IEnumerator QuitGame()
+    {
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(1.5f);
+        Application.Quit();
     }
 }
