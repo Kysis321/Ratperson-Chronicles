@@ -1,0 +1,652 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Stop",
+				"Stop()"
+			],
+			[
+				"Ini",
+				"Initialised"
+			],
+			[
+				"Init",
+				"InitMic()"
+			],
+			[
+				"Compon",
+				"Component"
+			],
+			[
+				"G",
+				"GameStarted"
+			],
+			[
+				"Sta",
+				"StartGame()"
+			],
+			[
+				"Destory",
+				"Destroy(Object obj)"
+			],
+			[
+				"Win",
+				"WinGame()"
+			],
+			[
+				"GetKey",
+				"GetKeyDown(string name)"
+			],
+			[
+				"Sce",
+				"SceneManager"
+			],
+			[
+				"Sc",
+				"SceneManager"
+			],
+			[
+				"Ev",
+				"EventSystems"
+			],
+			[
+				"De",
+				"Destroy"
+			],
+			[
+				"Spawn",
+				"SpawnBoss()"
+			],
+			[
+				"timer",
+				"timerStart"
+			],
+			[
+				"Start",
+				"StartBoss()"
+			],
+			[
+				"Boss",
+				"BossPhase"
+			],
+			[
+				"Tim",
+				"Time"
+			],
+			[
+				"up",
+				"Update"
+			],
+			[
+				"coold",
+				"shootCooldown"
+			],
+			[
+				"cool",
+				"cooling"
+			],
+			[
+				"Animat",
+				"Animator"
+			],
+			[
+				"Get",
+				"GetComponentInParent"
+			],
+			[
+				"Aud",
+				"AudioSource"
+			],
+			[
+				"mic",
+				"micNum"
+			],
+			[
+				"SetMic",
+				"SetMicNum(string num)"
+			],
+			[
+				"Getmic",
+				"GetMicNum()"
+			],
+			[
+				"St",
+				"Stop"
+			],
+			[
+				"Dest",
+				"Destroy(Object obj)"
+			],
+			[
+				"GetMin",
+				"GetMinPitch()"
+			],
+			[
+				"max",
+				"maxVol"
+			],
+			[
+				"min",
+				"minVol"
+			],
+			[
+				"GetM",
+				"GetMaxVol()"
+			],
+			[
+				"Vect",
+				"Vector2()"
+			],
+			[
+				"an",
+				"anchorMin"
+			],
+			[
+				"Ve",
+				"Vector2"
+			],
+			[
+				"sp",
+				"sprite"
+			],
+			[
+				"Game",
+				"GameObject(string name, params Type[] components)"
+			],
+			[
+				"GetC",
+				"GetComponent(string type)"
+			],
+			[
+				"TextMeshPro",
+				"TextMeshProUGUI"
+			],
+			[
+				"text",
+				"text"
+			],
+			[
+				"ToS",
+				"ToString()"
+			],
+			[
+				"tex",
+				"text"
+			],
+			[
+				"Text",
+				"TextMeshPro"
+			],
+			[
+				"TextMes",
+				"TextMeshPro"
+			],
+			[
+				"pitch",
+				"pitchNum"
+			],
+			[
+				"n",
+				"num"
+			],
+			[
+				"total",
+				"totalVol"
+			],
+			[
+				"fo",
+				"foreach"
+			],
+			[
+				"Qui",
+				"Quit()"
+			],
+			[
+				"Loa",
+				"LoadScene(string sceneName)"
+			],
+			[
+				"SceneMan",
+				"SceneManager"
+			],
+			[
+				"Colli",
+				"Collider2D"
+			],
+			[
+				"Ge",
+				"Generic"
+			],
+			[
+				"Un",
+				"UnityEngine"
+			],
+			[
+				"Wa",
+				"WaitForSeconds"
+			],
+			[
+				"mas",
+				"masterScript"
+			],
+			[
+				"x",
+				"xVector"
+			],
+			[
+				"Ca",
+				"CalculateVectors()"
+			],
+			[
+				"Audio",
+				"AudioSettings"
+			],
+			[
+				"Ien",
+				"IEnumerator"
+			],
+			[
+				"V",
+				"Vector2(float x, float y)"
+			],
+			[
+				"Rig",
+				"Rigidbody2D()"
+			],
+			[
+				"Ins",
+				"Instantiate(Object original)"
+			],
+			[
+				"random",
+				"randomDirectionY"
+			],
+			[
+				"ran",
+				"randomSpeed"
+			],
+			[
+				"Ga",
+				"GameWinEvent()"
+			],
+			[
+				"SPrite",
+				"SpriteRenderer"
+			],
+			[
+				"Gam",
+				"GameObject"
+			],
+			[
+				"Change",
+				"ChangeSong()"
+			],
+			[
+				"Load",
+				"LoadScene"
+			],
+			[
+				"LoadS",
+				"LoadScene(int sceneBuildIndex)"
+			],
+			[
+				"Scenm",
+				"SceneManager"
+			],
+			[
+				"Box",
+				"BoxCollider2D"
+			],
+			[
+				"GetComponent",
+				"GetComponent<T>()"
+			],
+			[
+				"Aniamt",
+				"Animator"
+			],
+			[
+				"RigidbodyConstraints",
+				"RigidbodyConstraints2D"
+			],
+			[
+				"F",
+				"FreezePositionY"
+			],
+			[
+				"Debu",
+				"Debug"
+			],
+			[
+				"Drop",
+				"DropDelay()"
+			],
+			[
+				"wa",
+				"WaitForSeconds"
+			],
+			[
+				"IE",
+				"IEnumerator"
+			],
+			[
+				"Free",
+				"FreezePositionX"
+			],
+			[
+				"RigidBO",
+				"RigidbodyConstraints2D"
+			],
+			[
+				"Pha",
+				"PhaseChanged"
+			],
+			[
+				"Rigi",
+				"RigidbodyConstraints2D"
+			],
+			[
+				"Rigidb",
+				"RigidbodyConstraints"
+			],
+			[
+				"Rigidbo",
+				"Rigidbody2D"
+			],
+			[
+				"GetKe",
+				"GetKeyDown(string name)"
+			],
+			[
+				"Phase",
+				"PhaseChangeEvent()"
+			],
+			[
+				"Event",
+				"EventManager"
+			],
+			[
+				"PhaseChan",
+				"PhaseChanged"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/21T2/GDS210/Ratperson-Chronicles/Assets/Scenes/Programmers/Kyle/Scripts/DialogueManager.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/21T2/GDS210/Ratperson-Chronicles/Assets/Scenes/Programmers/Kyle/Scripts/DialogueParser.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/Class",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/Project/SAE",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/Junk/Projects/Unity",
+		"/C/Users/lgjos/My",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/Assets/Scenes/Programmers/Josh/josh-pjfile.sublime-project",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/Assets/Scenes/Programmers/Josh/AudioManager.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/Ratperson-Chronicles/21T2/GDS210/Ratperson-Chronicles/Assets/Scenes/Programmers/Josh/AudioManager.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/GameStarter.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/ToggleVisible.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/LivesCounter.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/EnemySpawn.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/EventManager.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/BossController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/MicListener.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/Master.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/DataHolder.cs",
+		"/C/Users/lgjos/Downloads/She.Will.Punish.Them.v0.600/She Will Punish Them_Data/Managed/Assembly-CSharp.dll",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/EnemyController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/MusicController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/Cannon/ShootCannon.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/Cannon/CannonCooldownGauge.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/KillZone.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Junk/Projects/Unity",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Project/SAE",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Class",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/EventManager.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/BossController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/ToggleVisible.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/DataRelay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/PlayerController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/LivesCounter.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/ShootCannon.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/PitchPointer.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/CannonCooldownGauge.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/DataRelay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/PlayerController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GameStuff/PitchPointer.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/MenuStuff/ChangeText.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/MicListener.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/MenuStuff/ChangeText.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/SublimeProject.sublime-project",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/PitchDisplay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/GraphDisplay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Sublime-PachelbelsCannon.sublime-project",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/MenuButtons.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/ShootCannon.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/AnimalController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/AnimalController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/ShootCannon.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/PitchDisplay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/dbDisplay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/dbDisplay.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/Master.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/PlaySound.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/MenuButtons.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/KillZone.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scripts/KillZone.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/KillZone.cs",
+		"/C/Users/lgjos/AppData/Roaming/Sublime Text/Packages/User/OmniSharpSublime.sublime-settings",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/MusicController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/MenuButtons.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/CameraMover.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/ClickAndDrag.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-3-PachelbelsCannon/Assets/Scenes/Scripts/ShootCannon.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/Spawner.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/CameraFollow.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/FireFall.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/AnimalController.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/Master.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/EventManager.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/DragNDrop.cs",
+		"/C/Users/lgjos/My Junk/Projects/Unity Project/SAE Class 21T2/GDS210/GDS210-2-Animal-Fall/Assets/Scripts/GameSpace.cs"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Assembly-CSharp.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
