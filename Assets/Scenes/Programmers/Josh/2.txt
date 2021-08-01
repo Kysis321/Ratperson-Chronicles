@@ -1,0 +1,12 @@
+Phoenix;Josh doc runningp;0;R
+music1;sfx1
+Edgeworth;josh confirmed;0;L
+null;sfx2
+Kyle;Oh that's cool;0;R
+music2;sfx3
+Player;Restart:line,0;Continue:line,4
+music1;sfx1
+Kyle;This is a test;0;L
+music1;sfx1
+Orien;Test test test test;0;R
+music2;sfx3
