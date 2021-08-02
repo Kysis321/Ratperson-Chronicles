@@ -18,8 +18,8 @@ public class DialogueManager : MonoBehaviour
     public bool playerTalking;
     List<Button> buttons = new List<Button>();
 
-    public Text dialogueBox;
-    public Text nameBox;
+    public TextMeshProUGUI dialogueBox;
+    public TextMeshProUGUI nameBox;
     public GameObject choiceBox;
 
     // Use this for initialization

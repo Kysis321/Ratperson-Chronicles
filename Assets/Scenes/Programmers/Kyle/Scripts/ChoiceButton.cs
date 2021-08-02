@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChoiceButton : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class ChoiceButton : MonoBehaviour
 
     public void SetText(string newText)
     {
-        this.GetComponentInChildren<Text>().text = newText;
+        this.GetComponentInChildren<TextMeshProUGUI>().text = newText;
     }
 
     public void SetOption(string newOption)
