@@ -1,22 +1,10 @@
-Phoenix;Josh doc runningp;0;R
-music1;sfx1
-Edgeworth;josh confirmed;0;L
-null;sfx2
-<<<<<<< Updated upstream
-Kyle;Oh that's cool;0;R
-music2;sfx3
-Player;Restart:line,0;Continue:line,4
-music1;sfx1
-Kyle;This is a test;0;L
-music1;sfx1
-Orien;Test test test test;0;R
-=======
-Phoenix;Oh that's cool;0;R
-music2;sfx3
-Player;Restart:line,0;Continue:line,4
-music1;sfx1
-Edgeworth;This is a test;0;L
-music1;sfx1
-Phoenix;Test test test test;0;R
->>>>>>> Stashed changes
-music2;sfx3
+Phoenix;this is line 1;0;L;0
+0;0
+Edgeworth;content goes ehre;0;R;1
+1;1
+Phoenix;line 3;0;L;2
+2;2
+Edgeworth;and music doesn't change and no sfx;0;R;3
+0;0
+Player;Zero:line,0;Line 3:line,3;Line 1:line,1;
+0;0

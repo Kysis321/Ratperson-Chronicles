@@ -4,12 +4,14 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
 
+
 public class JoshDialogueManager : MonoBehaviour
 {
-
     JoshDialogueParser parser;
+    public GameObject background;
 
-    public string dialogue, characterName, currentMusic, sfx;
+    [SerializeField] string dialogue, characterName;
+    [SerializeField] int currentMusic, sfx, bg;
     public int lineNum;
     int pose;
     string position;
@@ -21,8 +23,8 @@ public class JoshDialogueManager : MonoBehaviour
     public TextMeshProUGUI nameBox;
     public GameObject choiceBox;
 
-    public AudioSource musicPlayer;
-    public AudioSource sfxPlayer;
+    public AudioPlayer musicPlayer;
+    public AudioPlayer sfxPlayer;
 
     // Use this for initialization
     void Start()
@@ -34,6 +36,8 @@ public class JoshDialogueManager : MonoBehaviour
         playerTalking = false;
         parser = GameObject.Find("DialogueParser").GetComponent<JoshDialogueParser>();
         lineNum = 0;
+
+        ShowDialogue();
     }
 
     // Update is called once per frame
@@ -41,9 +45,18 @@ public class JoshDialogueManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && playerTalking == false)
         {
-            ShowDialogue();
 
             lineNum++;
+            ShowDialogue();
+
+        }
+
+        if( Input.GetMouseButtonDown(1) && lineNum-1 > -1 )
+        {
+
+            lineNum--;
+            ShowDialogue();
+
         }
 
         UpdateUI();
@@ -85,9 +98,13 @@ public class JoshDialogueManager : MonoBehaviour
             dialogue = parser.GetContent(lineNum);
             pose = parser.GetPose(lineNum);
             position = parser.GetPosition(lineNum);
+            bg = parser.GetBg(lineNum);
             DisplayImages();
+
+            currentMusic = parser.GetMusic(lineNum);
+            sfx = parser.GetSfx(lineNum);
             ChangeMusic();
-            //PlaySfx();
+            PlaySfx();
         }
         else
         {
@@ -98,6 +115,8 @@ public class JoshDialogueManager : MonoBehaviour
             position = "";
             options = parser.GetOptions(lineNum);
             CreateButtons();
+            ChangeMusic();
+            PlaySfx();
         }
     }
 
@@ -112,7 +131,7 @@ public class JoshDialogueManager : MonoBehaviour
             cb.option = options[i].Split(':')[1];
             cb.box = this;
             b.transform.SetParent(this.transform);
-            b.transform.localPosition = new Vector3(0, -25 + (i * 50));
+            b.transform.localPosition = new Vector3(0, -25 + (i * 120));
             b.transform.localScale = new Vector3(1, 1, 1);
             buttons.Add(b);
         }
@@ -138,7 +157,10 @@ public class JoshDialogueManager : MonoBehaviour
 
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
             currSprite.sprite = character.GetComponent<JoshCharacter>().characterPoses[pose];
+            currSprite.enabled = false;
         }
+
+        background.GetComponent<Image>().sprite = background.GetComponent<BackgroundManager>().sprites[bg];
     }
 
 
@@ -156,23 +178,18 @@ public class JoshDialogueManager : MonoBehaviour
     }
 
     void ChangeMusic() {
-        currentMusic = parser.GetMusic(lineNum);
-        if( currentMusic != "null" ) {
-            musicPlayer.Stop();
-            AudioClip clip = Resources.Load<AudioClip>(currentMusic);
-            musicPlayer.clip = clip;
-            musicPlayer.Play();
+        if( currentMusic != 0 ) {
+            currentMusic -= 1;
+            Debug.Log("playing currentMusic=" + currentMusic);
+            musicPlayer.ChangeSong(currentMusic);
         }
-        
     }
 
     void PlaySfx() {
-        sfx = parser.GetSfx(lineNum);
-        if( sfx != "null" ) {
-            musicPlayer.Stop();
-            AudioClip clip = Resources.Load<AudioClip>(sfx);
-            musicPlayer.clip = clip;
-            musicPlayer.Play();
+        if( sfx != 0 ) {
+            sfx -= 1;
+            Debug.Log("playing sfx=" + sfx);
+            sfxPlayer.ChangeSong(sfx);
         }
     }
 }
