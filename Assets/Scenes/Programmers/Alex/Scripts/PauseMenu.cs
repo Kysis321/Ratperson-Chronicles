@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Pressing the ESC button will pause and unpause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameisPaused)
@@ -24,6 +25,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // If the game is paused, the game will resume when the key is pressed
     void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -31,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         GameisPaused = false;
     }
 
+    // If the game isn't paused, the game will pause when the key is pressed
     void Pause()
     {
         pauseMenuUI.SetActive(true);

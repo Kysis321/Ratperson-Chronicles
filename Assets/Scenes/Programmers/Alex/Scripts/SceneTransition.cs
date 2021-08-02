@@ -18,6 +18,7 @@ public class SceneTransition : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
+    // Will play fade animation and wait 1.5 seconds before loading the specified scene
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("end");
@@ -25,6 +26,7 @@ public class SceneTransition : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    // Will play fade animation and wait 1.5 seconds before quitting the game
     IEnumerator QuitGame()
     {
         transitionAnim.SetTrigger("end");
