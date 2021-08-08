@@ -1,4 +1,4 @@
-Character Name;Dialogue shown;0;L;0
+Phoenix;Dialogue shown;0;L;0
 0;0
 Edgeworth;content goes ehre;0;R;1
 1;1

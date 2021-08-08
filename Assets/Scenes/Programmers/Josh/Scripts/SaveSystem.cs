@@ -9,7 +9,6 @@ public class SaveSystem: MonoBehaviour
 
     [SerializeField] GameObject SaveMenu;
 
-    int saveSelect;
     bool isSave;
 
     // Start is called before the first frame update
@@ -21,9 +20,10 @@ public class SaveSystem: MonoBehaviour
     public void SetIsSave(bool type )
     {
         isSave = type;
+        DialogueEventManager.TriggerSaveSlot();
     }
     
-    void ToggleSaveMenu()
+    public void ToggleSaveMenu()
     {
         if( SaveMenu.activeSelf == false )
         {
@@ -32,7 +32,7 @@ public class SaveSystem: MonoBehaviour
         {
             SaveMenu.SetActive(false);
         }
-        
+
     }
 
     public void ButtonClick(int buttonNum)
@@ -47,5 +47,6 @@ public class SaveSystem: MonoBehaviour
             diagMang.SetLineNum(saveLineNum);
             diagMang.ShowDialogue();
         }
+        DialogueEventManager.TriggerSaveSlot();
     }
 }
