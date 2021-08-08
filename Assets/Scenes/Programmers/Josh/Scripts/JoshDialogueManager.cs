@@ -43,7 +43,7 @@ public class JoshDialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playerTalking == false)
+        if( Input.GetKeyDown("e") && playerTalking == false )
         {
 
             lineNum++;
@@ -51,7 +51,7 @@ public class JoshDialogueManager : MonoBehaviour
 
         }
 
-        if( Input.GetMouseButtonDown(1) && lineNum-1 > -1 )
+        if( Input.GetKeyDown("q") && lineNum-1 > -1 )
         {
 
             lineNum--;
@@ -191,5 +191,14 @@ public class JoshDialogueManager : MonoBehaviour
             Debug.Log("playing sfx=" + sfx);
             sfxPlayer.ChangeSong(sfx);
         }
+    }
+
+    public void SetLineNum(int newLineNum)
+    {
+        lineNum = newLineNum;
+    }
+    public int GetLineNum()
+    {
+        return lineNum;
     }
 }
