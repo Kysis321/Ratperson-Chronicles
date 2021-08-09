@@ -1,4 +1,4 @@
-Kyle;Hey what's up;0;L
+Player;Restart:line,1;Continue:line,4;Loser:line,2;
 Orien;Nothing much man;0;R
 Kyle;Oh that's cool;0;L
 Player;Restart:line,0;Continue:line,4;Loser:line,2;
