@@ -35,7 +35,7 @@ public class RandomSpawner : MonoBehaviour
         SpawnEnemy();
     }
 
-    public string dies;
+    public bool dies = false;
     public void Weakpoint()
     {
         weakpointHit ++;
@@ -43,17 +43,17 @@ public class RandomSpawner : MonoBehaviour
         if(weakpointHit >= 10)
         {
             spawned = false;
-            dies = "dies string";
+            dies = true;
             ReportMiniGameResult(dies);
         }
     }
 
-    public void ReportMiniGameResult(string dies)
+    public void ReportMiniGameResult(bool dies)
     {
         Debug.Log("Win, send data to analytic. Message: " + dies);
         Analytics.CustomEvent("fightingMiniGameWin", new Dictionary<string, object>
         {
-            {"fightingMiniGameStringTestRathBranch", dies},
+            {"fightingMiniGameBoolTestMainBranch", dies},
         });
     }
 }
