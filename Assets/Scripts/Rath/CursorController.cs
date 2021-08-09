@@ -43,12 +43,12 @@ public class CursorController : MonoBehaviour
     private void StartedClick()
     {
         ChangeCursor(cursorClicked);
-        Debug.Log("Started Click");
+        //Debug.Log("Started Click");
     }
 
     private void EndedClick()
     {
-        Debug.Log("Ended Click");
+        //Debug.Log("Ended Click");
         DetectObject();
         ChangeCursor(cursor);
     }

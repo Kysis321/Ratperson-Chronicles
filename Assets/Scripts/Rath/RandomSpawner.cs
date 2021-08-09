@@ -14,9 +14,6 @@ public class RandomSpawner : MonoBehaviour
 
     public int weakpointHit = 0;
 
-    public bool dies = false;
-
-    // Update is called once per frame
     public void Update()
     {
         if(spawned == true)
@@ -39,22 +36,23 @@ public class RandomSpawner : MonoBehaviour
         spawned = true;
     }
 
+    public int dies = 0;
     public void Weakpoint()
     {
         weakpointHit ++;
         if(weakpointHit >= 10)
         {
-            dies = true;
+            dies = 1;
             ReportMiniGameResult(dies);
         }
     }
 
-    public void ReportMiniGameResult(bool dies)
+    public void ReportMiniGameResult(int dies)
     {
         Debug.Log("Win, send data to analytic");
         Analytics.CustomEvent("FightingMiniGameWin", new Dictionary<string, object>
         {
-            {"EnemyTestObject", dies},
+            {"EnemyTestInt", dies},
         });
     }
 }
