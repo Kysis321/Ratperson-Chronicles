@@ -8,8 +8,6 @@ public class Bolt : MonoBehaviour
     public float speed = 30f;
     private Rigidbody2D rb;
 
-    private Vector2 screenBounds;
-
     // Start is called before the first frame update
     void Start()
     {

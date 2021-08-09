@@ -4,28 +4,33 @@ using UnityEngine;
 
 public class LightningBoltSpawner : MonoBehaviour
 {
-    public GameObject BoltPrefab;
-    public float respawnTime = 1.0f;
-    private Vector2 screenBounds;
+    public Transform boltFire;
+    public GameObject bolt;
+
+    public float respawnTime = 3.0f;
 
     void Start()
     {
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        StartCoroutine(boltWave());
+        StartCoroutine(boltSpawner());
     }
 
-    private void spawnEnemy()
+    void Update()
     {
-        GameObject a = Instantiate(BoltPrefab) as GameObject;
-        a.transform.position = new Vector2(screenBounds.y * 1, Random.Range(-screenBounds.y, screenBounds.x));
+
     }
 
-    IEnumerator boltWave()
+    void Shoot()
+    {
+        Quaternion spawnrotation = Quaternion.Euler(0, 0, 0);
+        Instantiate(bolt, boltFire.position, spawnrotation);
+    }
+
+    IEnumerator boltSpawner()
     {
         while(true)
         {
             yield return new WaitForSeconds(respawnTime);
-            spawnEnemy();
+            Shoot();
         }
     }
 }
