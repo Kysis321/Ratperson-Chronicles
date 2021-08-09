@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SaveSystem: MonoBehaviour
 {
-    [SerializeField] JoshDialogueManager diagMang;
+    [SerializeField] DialogueManager diagMang;
     int saveLineNum;
 
     [SerializeField] GameObject SaveMenu;
@@ -14,7 +14,7 @@ public class SaveSystem: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        diagMang = GameObject.Find("Manager").GetComponent<JoshDialogueManager>();
+        diagMang = GameObject.Find("Manager").GetComponent<DialogueManager>();
     }
 
     public void SetIsSave(bool type )
@@ -32,7 +32,6 @@ public class SaveSystem: MonoBehaviour
         {
             SaveMenu.SetActive(false);
         }
-
     }
 
     public void ButtonClick(int buttonNum)

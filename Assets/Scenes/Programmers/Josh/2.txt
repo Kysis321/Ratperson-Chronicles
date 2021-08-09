@@ -1,10 +1,10 @@
-Phoenix;Dialogue shown;0;L;0
+Phoenix;Dialogue shown;0
 0;0
-Edgeworth;content goes ehre;0;R;1
+Edgeworth;content goes here;1
 1;1
-Phoenix;line 3;0;L;2
+Phoenix;line 3;2
 2;2
-Edgeworth;and music doesn't change and no sfx;0;R;3
+Edgeworth;and music doesn't change and no sfx;3
 0;0
 Player;Zero:line,0;Line 3:line,3;Line 1:line,1;poop:line,0
 0;0

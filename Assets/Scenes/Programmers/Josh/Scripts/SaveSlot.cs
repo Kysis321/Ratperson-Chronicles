@@ -23,14 +23,6 @@ public class SaveSlot: MonoBehaviour
         myText = this.GetComponentInChildren<TextMeshProUGUI>();
         myText.text = buttonNum.ToString() + ": Linenum = " + PlayerPrefs.GetInt("saveLineNum" + buttonNum);
     }
-    
-    private void Update()
-    {
-        if( Input.GetKeyDown("w") )
-        {
-            myText.text = buttonNum.ToString() + ": Linenum = " + PlayerPrefs.GetInt("saveLineNum"+buttonNum);
-        }
-    }
 
     void UpdateText()
     {

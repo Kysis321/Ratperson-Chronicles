@@ -8,22 +8,19 @@ using System.Text.RegularExpressions;
 using UnityEngine.SceneManagement;
 
 
-public class JoshDialogueParser : MonoBehaviour {
+public class DialogueParser : MonoBehaviour {
     //we are representing a DialogueLine. Each one of our lines has a few components to it. 
     //Each line has a name, content, pose, position, and a fifth variable which is going to be the options the player will have when given choices.
     struct DialogueLine {
+
         public string name;
         public string content;
-        public int pose;
-        public string position;
         public string[] options;
         public int bg;
 
-        public DialogueLine( string Name, string Content, int Pose, string Position , int Bg ) {
+        public DialogueLine( string Name, string Content, int Bg ) {
             name = Name;
             content = Content;
-            pose = Pose;
-            position = Position;
             options = new string[0];
             bg = Bg;
         }
@@ -82,14 +79,14 @@ public class JoshDialogueParser : MonoBehaviour {
 
                     string[] lineData = line.Split(';');
                     if( lineData[0] == "Player" ) {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "", 0);
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0);
                         lineEntry.options = new string[lineData.Length - 1];
                         for( int i = 1;i < lineData.Length;i++ ) {
                             lineEntry.options[i - 1] = lineData[i];
                         }
                         lines.Add(lineEntry);
                     } else {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), lineData[3], int.Parse(lineData[4]));
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]));
                         lines.Add(lineEntry);
                     }
                 }
@@ -112,14 +109,6 @@ public class JoshDialogueParser : MonoBehaviour {
 
     //The following will output the files information to other areas
 
-
-    public string GetPosition( int lineNumber ) {
-        if( lineNumber < lines.Count ) {
-            return lines[lineNumber].position;
-        }
-        return "";
-    }
-
     public string GetName( int lineNumber ) {
         if( lineNumber < lines.Count ) {
             return lines[lineNumber].name;
@@ -134,9 +123,11 @@ public class JoshDialogueParser : MonoBehaviour {
         return "";
     }
 
-    public int GetPose( int lineNumber ) {
-        if( lineNumber < lines.Count ) {
-            return lines[lineNumber].pose;
+    public int GetBg( int lineNumber )
+    {
+        if( lineNumber < lines.Count )
+        {
+            return lines[lineNumber].bg;
         }
         return 0;
     }
@@ -158,13 +149,6 @@ public class JoshDialogueParser : MonoBehaviour {
     public int GetSfx( int lineNumber ) {
         if( lineNumber < lines.Count ) {
             return eLines[lineNumber].sfx;
-        }
-        return 0;
-    }
-
-    public int GetBg( int lineNumber ) {
-        if( lineNumber < lines.Count ) {
-            return lines[lineNumber].bg;
         }
         return 0;
     }

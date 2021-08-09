@@ -5,16 +5,14 @@ using System.Collections.Generic;
 using TMPro;
 
 
-public class JoshDialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
-    JoshDialogueParser parser;
+    DialogueParser parser;
     public GameObject background;
 
     [SerializeField] string dialogue, characterName;
     [SerializeField] int currentMusic, sfx, bg;
     public int lineNum;
-    int pose;
-    string position;
     string[] options;
     public bool playerTalking;
     List<Button> buttons = new List<Button>();
@@ -31,10 +29,8 @@ public class JoshDialogueManager : MonoBehaviour
     {
         dialogue = "";
         characterName = "";
-        pose = 0;
-        position = "L";
         playerTalking = false;
-        parser = GameObject.Find("DialogueParser").GetComponent<JoshDialogueParser>();
+        parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
         lineNum = 0;
 
         ShowDialogue();
@@ -51,7 +47,7 @@ public class JoshDialogueManager : MonoBehaviour
 
         }
 
-        if( Input.GetKeyDown("q") && lineNum-1 > -1 )
+        if( Input.GetKeyDown("q") && lineNum > 0 )
         {
 
             lineNum--;
@@ -64,7 +60,6 @@ public class JoshDialogueManager : MonoBehaviour
 
     public void ShowDialogue()
     {
-        ResetImages();
         ParseLine();
     }
 
@@ -96,8 +91,6 @@ public class JoshDialogueManager : MonoBehaviour
             playerTalking = false;
             characterName = parser.GetName(lineNum);
             dialogue = parser.GetContent(lineNum);
-            pose = parser.GetPose(lineNum);
-            position = parser.GetPosition(lineNum);
             bg = parser.GetBg(lineNum);
             DisplayImages();
 
@@ -111,8 +104,6 @@ public class JoshDialogueManager : MonoBehaviour
             playerTalking = true;
             characterName = "";
             dialogue = "";
-            pose = 0;
-            position = "";
             options = parser.GetOptions(lineNum);
             CreateButtons();
             ChangeMusic();
@@ -126,7 +117,7 @@ public class JoshDialogueManager : MonoBehaviour
         {
             GameObject button = (GameObject)Instantiate(choiceBox);
             Button b = button.GetComponent<Button>();
-            JoshChoiceButton cb = button.GetComponent<JoshChoiceButton>();
+            ChoiceButton cb = button.GetComponent<ChoiceButton>();
             cb.SetText(options[i].Split(':')[0]);
             cb.option = options[i].Split(':')[1];
             cb.box = this;
@@ -137,44 +128,9 @@ public class JoshDialogueManager : MonoBehaviour
         }
     }
 
-    void ResetImages()
-    {
-        if (characterName != "")
-        {
-            GameObject character = GameObject.Find(characterName);
-            SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = null;
-        }
-    }
-
     void DisplayImages()
     {
-        if (characterName != "")
-        {
-            GameObject character = GameObject.Find(characterName);
-
-            SetSpritePositions(character);
-
-            SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = character.GetComponent<JoshCharacter>().characterPoses[pose];
-            currSprite.enabled = false;
-        }
-
         background.GetComponent<Image>().sprite = background.GetComponent<BackgroundManager>().sprites[bg];
-    }
-
-
-    void SetSpritePositions(GameObject spriteObj)
-    {
-        if (position == "L")
-        {
-            spriteObj.transform.position = new Vector3(-6, 0);
-        }
-        else if (position == "R")
-        {
-            spriteObj.transform.position = new Vector3(6, 0);
-        }
-        spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
     }
 
     void ChangeMusic() {

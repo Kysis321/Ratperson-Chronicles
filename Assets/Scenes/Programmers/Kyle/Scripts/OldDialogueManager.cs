@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using TMPro;
 
 
-public class DialogueManager : MonoBehaviour
+public class OldDialogueManager : MonoBehaviour
 {
 
-    DialogueParser parser;
+    OldDialogueParser parser;
 
     public string dialogue, characterName;
     public int lineNum;
@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
         pose = 0;
         position = "L";
         playerTalking = false;
-        parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
+        parser = GameObject.Find("OldDialogueParser").GetComponent<OldDialogueParser>();
         lineNum = 0;
     }
 
@@ -103,7 +103,7 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject button = (GameObject)Instantiate(choiceBox);
             Button b = button.GetComponent<Button>();
-            ChoiceButton cb = button.GetComponent<ChoiceButton>();
+            OldChoiceButton cb = button.GetComponent<OldChoiceButton>();
             cb.SetText(options[i].Split(':')[0]);
             cb.option = options[i].Split(':')[1];
             cb.box = this;
