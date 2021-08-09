@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f33a7e593d2f8d408e3f1d1d6116d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 0}
 --- !u!224 &423571772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -386,7 +387,7 @@ GameObject:
   - component: {fileID: 1470079059}
   - component: {fileID: 1470079060}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: WeakpointsSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,6 +423,8 @@ MonoBehaviour:
   Radius: 2
   spawnRate: 1
   spawned: 1
+  weakpointHit: 0
+  dies: 0
 --- !u!1001 &4512569605143906370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -477,5 +480,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4512569606304035121, guid: 1724c9288dcde594685b1534cc22a9a3, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1470079060}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1724c9288dcde594685b1534cc22a9a3, type: 3}

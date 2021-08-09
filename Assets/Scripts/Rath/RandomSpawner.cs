@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class RandomSpawner : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class RandomSpawner : MonoBehaviour
     public float spawnRate = 1;
 
     public bool spawned = true;
+
+    public int weakpointHit = 0;
+
+    public bool dies = false;
 
     // Update is called once per frame
     public void Update()
@@ -33,10 +38,23 @@ public class RandomSpawner : MonoBehaviour
         SpawnEnemy();
         spawned = true;
     }
-    /*
-    private void Gizmos()
+
+    public void Weakpoint()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(this.transform.position, Radius);
-    }*/
+        weakpointHit ++;
+        if(weakpointHit >= 10)
+        {
+            dies = true;
+            ReportMiniGameResult(dies);
+        }
+    }
+
+    public void ReportMiniGameResult(bool dies)
+    {
+        Debug.Log("Win, send data to analytic");
+        Analytics.CustomEvent("FightingMiniGameWin", new Dictionary<string, object>
+        {
+            {"EnemyTestObject", dies},
+        });
+    }
 }
