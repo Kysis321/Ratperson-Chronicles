@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    public RandomSpawner spawner;
+    RandomSpawner spawner;
 
     void Start()
     {

@@ -6,7 +6,7 @@ using UnityEngine.Analytics;
 public class RandomSpawner : MonoBehaviour
 {
     public GameObject EnemyPrefab;
-    public float Radius = 1;
+    public float Radius = 2;
 
     public float spawnRate = 1;
 
@@ -33,15 +33,16 @@ public class RandomSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(spawnRate);
         SpawnEnemy();
-        spawned = true;
     }
 
     public int dies = 0;
     public void Weakpoint()
     {
         weakpointHit ++;
+        spawned = true;
         if(weakpointHit >= 10)
         {
+            spawned = false;
             dies = 1;
             ReportMiniGameResult(dies);
         }
