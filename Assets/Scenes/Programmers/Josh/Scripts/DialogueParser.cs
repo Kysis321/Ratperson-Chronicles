@@ -78,12 +78,17 @@ public class DialogueParser : MonoBehaviour {
                 if( line != null ) {
 
                     string[] lineData = line.Split(';');
-                    if( lineData[0] == "Player" ) {
+                    if( lineData[0] == "Player" )
+                    {
                         DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0);
                         lineEntry.options = new string[lineData.Length - 1];
-                        for( int i = 1;i < lineData.Length;i++ ) {
+                        for( int i = 1;i < lineData.Length;i++ )
+                        {
                             lineEntry.options[i - 1] = lineData[i];
                         }
+                        lines.Add(lineEntry);
+                    }else if(lineData[0] == "End") {
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0);
                         lines.Add(lineEntry);
                     } else {
                         DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]));
@@ -151,5 +156,14 @@ public class DialogueParser : MonoBehaviour {
             return eLines[lineNumber].sfx;
         }
         return 0;
+    }
+
+    public string GetNextScene( int lineNumber )
+    {
+        if( lineNumber < lines.Count )
+        {
+            return lines[lineNumber].content;
+        }
+        return "Scene1";
     }
 }

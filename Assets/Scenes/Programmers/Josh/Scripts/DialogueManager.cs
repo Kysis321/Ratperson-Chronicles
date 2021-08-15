@@ -8,9 +8,10 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     DialogueParser parser;
+    SceneInit initialiser;
     public GameObject background;
 
-    [SerializeField] string dialogue, characterName;
+    [SerializeField] string dialogue, characterName, newScene;
     [SerializeField] int currentMusic, sfx, bg;
     public int lineNum;
     string[] options;
@@ -31,8 +32,15 @@ public class DialogueManager : MonoBehaviour
         characterName = "";
         playerTalking = false;
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
-        lineNum = 0;
-
+        initialiser = GameObject.Find("SceneInit").GetComponent<SceneInit>();
+        if( initialiser.saveLoad )
+        {
+            lineNum = initialiser.lineNum;
+            initialiser.saveLoad = false;
+        } else
+        {
+            lineNum = 0;
+        }
         ShowDialogue();
     }
 
@@ -86,7 +94,12 @@ public class DialogueManager : MonoBehaviour
 
     void ParseLine()
     {
-        if (parser.GetName(lineNum) != "Player")
+        if( parser.GetName(lineNum) == "End" )
+        {
+            newScene = parser.GetNextScene(lineNum);
+            initialiser.loadGame(newScene, 0);
+        } 
+        else if (parser.GetName(lineNum) != "Player")
         {
             playerTalking = false;
             characterName = parser.GetName(lineNum);

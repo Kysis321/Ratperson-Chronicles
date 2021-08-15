@@ -1,26 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveSystem: MonoBehaviour
 {
-    [SerializeField] DialogueManager diagMang;
+    DialogueManager diagMang;
     int saveLineNum;
+    string saveScene;
+
+    SceneInit initialiser;
 
     [SerializeField] GameObject SaveMenu;
-
     bool isSave;
 
     // Start is called before the first frame update
     void Start()
     {
         diagMang = GameObject.Find("Manager").GetComponent<DialogueManager>();
+        initialiser = GameObject.Find("SceneInit").GetComponent<SceneInit>();
     }
 
     public void SetIsSave(bool type )
     {
         isSave = type;
-        DialogueEventManager.TriggerSaveSlot();
+        SceneEventManager.TriggerSaveSlot();
     }
     
     public void ToggleSaveMenu()
@@ -40,12 +44,13 @@ public class SaveSystem: MonoBehaviour
         {
             saveLineNum = diagMang.GetLineNum();
             PlayerPrefs.SetInt("saveLineNum" + buttonNum, saveLineNum);
+            PlayerPrefs.SetString("saveScene" + buttonNum, SceneManager.GetActiveScene().name);
+            SceneEventManager.TriggerSaveSlot();
         } else
         {
             saveLineNum = PlayerPrefs.GetInt("saveLineNum" + buttonNum);
-            diagMang.SetLineNum(saveLineNum);
-            diagMang.ShowDialogue();
+            saveScene = PlayerPrefs.GetString("saveScene" + buttonNum);
+            initialiser.loadGame(saveScene, saveLineNum);
         }
-        DialogueEventManager.TriggerSaveSlot();
     }
 }

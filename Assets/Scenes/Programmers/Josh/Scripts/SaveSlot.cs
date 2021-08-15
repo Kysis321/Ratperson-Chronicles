@@ -10,22 +10,23 @@ public class SaveSlot: MonoBehaviour
 
     private void OnEnable()
     {
-        DialogueEventManager.onSaveSlotTrigger += UpdateText;
+        SceneEventManager.onSaveSlotTrigger += UpdateText;
     }
 
     private void OnDisable()
     {
-        DialogueEventManager.onSaveSlotTrigger -= UpdateText;
+        SceneEventManager.onSaveSlotTrigger -= UpdateText;
     }
 
     private void Awake()
     {
         myText = this.GetComponentInChildren<TextMeshProUGUI>();
-        myText.text = buttonNum.ToString() + ": Linenum = " + PlayerPrefs.GetInt("saveLineNum" + buttonNum);
+        UpdateText();
     }
 
     void UpdateText()
     {
-        myText.text = buttonNum.ToString() + ": Linenum = " + PlayerPrefs.GetInt("saveLineNum" + buttonNum);
+        myText.text = buttonNum.ToString() + ": Linenum=" + PlayerPrefs.GetInt("saveLineNum" + buttonNum)
+             + ", Scene=" + PlayerPrefs.GetString("saveScene" + buttonNum);
     }
 }

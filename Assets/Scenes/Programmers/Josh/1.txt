@@ -1,0 +1,9 @@
+Char 1;Heyo;0
+0;0
+Edgeworth;content goes here;1
+1;1
+Phoenix;line 3;2
+2;2
+Edgeworth;and music doesn't change and no sfx;3
+0;0
+End;Scene2

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueEventManager : MonoBehaviour
+public class SceneEventManager : MonoBehaviour
 {
     /*
     public static DialogueEventManager current;
