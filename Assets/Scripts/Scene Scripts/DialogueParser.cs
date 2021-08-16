@@ -46,7 +46,7 @@ public class DialogueParser : MonoBehaviour {
     void Awake() {
         
         //this is the folder which contains the text doc
-        string file = "Assets/Scenes/Programmers/Josh/";
+        string file = "Assets/Scenes/A Main FInal Scene/Story";
         string sceneNum = SceneManager.GetActiveScene().name;
 
         //replaces the word "scene" with nothing
