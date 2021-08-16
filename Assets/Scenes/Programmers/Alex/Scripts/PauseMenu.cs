@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     // If the game is paused, the game will resume when the key is pressed
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
