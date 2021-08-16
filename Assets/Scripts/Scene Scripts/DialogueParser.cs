@@ -43,7 +43,7 @@ public class DialogueParser : MonoBehaviour {
     // Use this for initialization
     //What this function is doing for us is dynamically getting the dialogue file that we saved by looking at the name of the Unity Scene we are in and getting the number from that.
     //It also instantiates the lines List which tells the computer to give us memory to store things in the List because we are about to put things in the List.
-    void Start() {
+    void Awake() {
         
         //this is the folder which contains the text doc
         string file = "Assets/Scenes/Programmers/Josh/";
@@ -63,8 +63,8 @@ public class DialogueParser : MonoBehaviour {
 
         LoadDialogue(file);
 
-        Debug.Log("line0 = " + lines[0].content);
-        Debug.Log("line1 = " + lines[1].content);
+        Debug.Log("line0 = " + lines[0].name);
+        Debug.Log("line1 = " + lines[1].name);
     }
 
     void LoadDialogue( string filename ) {

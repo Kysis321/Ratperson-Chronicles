@@ -1,4 +1,4 @@
-Char 1;Heyo;0
+Phoenix;Heyo;0
 0;0
 Edgeworth;content goes here;1
 1;1
