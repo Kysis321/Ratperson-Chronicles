@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 
 public class RandomSpawner : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class RandomSpawner : MonoBehaviour
             spawned = false;
             dies = true;
             ReportMiniGameResult(dies);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
