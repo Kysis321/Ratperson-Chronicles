@@ -3,11 +3,11 @@ using System.Collections;
 using UnityEngine.UI;
 using TMPro;
 
-public class ChoiceButton : MonoBehaviour
+public class OldChoiceButton : MonoBehaviour
 {
 
     public string option;
-    public DialogueManager box;
+    public OldDialogueManager box;
 
     // Use this for initialization
     void Start()

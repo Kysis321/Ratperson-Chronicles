@@ -7,13 +7,13 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-
     DialogueParser parser;
+    SceneInit initialiser;
+    public GameObject background;
 
-    public string dialogue, characterName;
+    [SerializeField] string dialogue, characterName, newScene;
+    [SerializeField] int currentMusic, sfx, bg;
     public int lineNum;
-    int pose;
-    string position;
     string[] options;
     public bool playerTalking;
     List<Button> buttons = new List<Button>();
@@ -22,26 +22,45 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameBox;
     public GameObject choiceBox;
 
+    public AudioPlayer musicPlayer;
+    public AudioPlayer sfxPlayer;
+
     // Use this for initialization
     void Start()
     {
         dialogue = "";
         characterName = "";
-        pose = 0;
-        position = "L";
         playerTalking = false;
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
-        lineNum = 0;
+        initialiser = GameObject.Find("SceneInit").GetComponent<SceneInit>();
+        if( initialiser.saveLoad )
+        {
+            lineNum = initialiser.lineNum;
+            initialiser.saveLoad = false;
+        } else
+        {
+            lineNum = 0;
+        }
+        ShowDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playerTalking == false)
+        if( Input.GetKeyDown("e") && playerTalking == false )
         {
-            ShowDialogue();
 
             lineNum++;
+            ShowDialogue();
+
+        }
+
+        if( Input.GetKeyDown("q") && lineNum > 0 )
+        {
+
+            lineNum--;
+            ShowDialogue();
+
         }
 
         UpdateUI();
@@ -49,7 +68,6 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowDialogue()
     {
-        ResetImages();
         ParseLine();
     }
 
@@ -76,24 +94,33 @@ public class DialogueManager : MonoBehaviour
 
     void ParseLine()
     {
-        if (parser.GetName(lineNum) != "Player")
+        if( parser.GetName(lineNum) == "End" )
+        {
+            newScene = parser.GetNextScene(lineNum);
+            initialiser.loadGame(newScene, 0);
+        } 
+        else if (parser.GetName(lineNum) != "Player")
         {
             playerTalking = false;
             characterName = parser.GetName(lineNum);
             dialogue = parser.GetContent(lineNum);
-            pose = parser.GetPose(lineNum);
-            position = parser.GetPosition(lineNum);
+            bg = parser.GetBg(lineNum);
             DisplayImages();
+
+            currentMusic = parser.GetMusic(lineNum);
+            sfx = parser.GetSfx(lineNum);
+            ChangeMusic();
+            PlaySfx();
         }
         else
         {
             playerTalking = true;
             characterName = "";
             dialogue = "";
-            pose = 0;
-            position = "";
             options = parser.GetOptions(lineNum);
             CreateButtons();
+            ChangeMusic();
+            PlaySfx();
         }
     }
 
@@ -108,46 +135,39 @@ public class DialogueManager : MonoBehaviour
             cb.option = options[i].Split(':')[1];
             cb.box = this;
             b.transform.SetParent(this.transform);
-            b.transform.localPosition = new Vector3(0, -25 + (i * 50));
+            b.transform.localPosition = new Vector3(0, -25 + (i * 120));
             b.transform.localScale = new Vector3(1, 1, 1);
             buttons.Add(b);
         }
     }
 
-    void ResetImages()
-    {
-        if (characterName != "")
-        {
-            GameObject character = GameObject.Find(characterName);
-            SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = null;
-        }
-    }
-
     void DisplayImages()
     {
-        if (characterName != "")
-        {
-            GameObject character = GameObject.Find(characterName);
+        background.GetComponent<Image>().sprite = background.GetComponent<BackgroundManager>().sprites[bg];
+    }
 
-            SetSpritePositions(character);
-
-            SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = character.GetComponent<Character>().characterPoses[pose];
+    void ChangeMusic() {
+        if( currentMusic != 0 ) {
+            currentMusic -= 1;
+            Debug.Log("playing currentMusic=" + currentMusic);
+            musicPlayer.ChangeSong(currentMusic);
         }
     }
 
+    void PlaySfx() {
+        if( sfx != 0 ) {
+            sfx -= 1;
+            Debug.Log("playing sfx=" + sfx);
+            sfxPlayer.ChangeSong(sfx);
+        }
+    }
 
-    void SetSpritePositions(GameObject spriteObj)
+    public void SetLineNum(int newLineNum)
     {
-        if (position == "L")
-        {
-            spriteObj.transform.position = new Vector3(-6, 0);
-        }
-        else if (position == "R")
-        {
-            spriteObj.transform.position = new Vector3(6, 0);
-        }
-        spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
+        lineNum = newLineNum;
+    }
+    public int GetLineNum()
+    {
+        return lineNum;
     }
 }

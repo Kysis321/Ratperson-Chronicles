@@ -5,13 +5,12 @@ using System.Collections.Generic;
 using TMPro;
 
 
-public class JoshDialogueManager : MonoBehaviour
+public class OldDialogueManager : MonoBehaviour
 {
-    JoshDialogueParser parser;
-    public GameObject background;
 
-    [SerializeField] string dialogue, characterName;
-    [SerializeField] int currentMusic, sfx, bg;
+    OldDialogueParser parser;
+
+    public string dialogue, characterName;
     public int lineNum;
     int pose;
     string position;
@@ -23,9 +22,6 @@ public class JoshDialogueManager : MonoBehaviour
     public TextMeshProUGUI nameBox;
     public GameObject choiceBox;
 
-    public AudioPlayer musicPlayer;
-    public AudioPlayer sfxPlayer;
-
     // Use this for initialization
     void Start()
     {
@@ -34,29 +30,18 @@ public class JoshDialogueManager : MonoBehaviour
         pose = 0;
         position = "L";
         playerTalking = false;
-        parser = GameObject.Find("DialogueParser").GetComponent<JoshDialogueParser>();
+        parser = GameObject.Find("OldDialogueParser").GetComponent<OldDialogueParser>();
         lineNum = 0;
-
-        ShowDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if( Input.GetKeyDown("e") && playerTalking == false )
+        if (Input.GetMouseButtonDown(0) && playerTalking == false)
         {
+            ShowDialogue();
 
             lineNum++;
-            ShowDialogue();
-
-        }
-
-        if( Input.GetKeyDown("q") && lineNum-1 > -1 )
-        {
-
-            lineNum--;
-            ShowDialogue();
-
         }
 
         UpdateUI();
@@ -98,13 +83,7 @@ public class JoshDialogueManager : MonoBehaviour
             dialogue = parser.GetContent(lineNum);
             pose = parser.GetPose(lineNum);
             position = parser.GetPosition(lineNum);
-            bg = parser.GetBg(lineNum);
             DisplayImages();
-
-            currentMusic = parser.GetMusic(lineNum);
-            sfx = parser.GetSfx(lineNum);
-            ChangeMusic();
-            PlaySfx();
         }
         else
         {
@@ -115,8 +94,6 @@ public class JoshDialogueManager : MonoBehaviour
             position = "";
             options = parser.GetOptions(lineNum);
             CreateButtons();
-            ChangeMusic();
-            PlaySfx();
         }
     }
 
@@ -126,12 +103,12 @@ public class JoshDialogueManager : MonoBehaviour
         {
             GameObject button = (GameObject)Instantiate(choiceBox);
             Button b = button.GetComponent<Button>();
-            JoshChoiceButton cb = button.GetComponent<JoshChoiceButton>();
+            OldChoiceButton cb = button.GetComponent<OldChoiceButton>();
             cb.SetText(options[i].Split(':')[0]);
             cb.option = options[i].Split(':')[1];
             cb.box = this;
             b.transform.SetParent(this.transform);
-            b.transform.localPosition = new Vector3(0, -25 + (i * 120));
+            b.transform.localPosition = new Vector3(0, -25 + (i * 50));
             b.transform.localScale = new Vector3(1, 1, 1);
             buttons.Add(b);
         }
@@ -156,11 +133,8 @@ public class JoshDialogueManager : MonoBehaviour
             SetSpritePositions(character);
 
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = character.GetComponent<JoshCharacter>().characterPoses[pose];
-            currSprite.enabled = false;
+            currSprite.sprite = character.GetComponent<Character>().characterPoses[pose];
         }
-
-        background.GetComponent<Image>().sprite = background.GetComponent<BackgroundManager>().sprites[bg];
     }
 
 
@@ -175,30 +149,5 @@ public class JoshDialogueManager : MonoBehaviour
             spriteObj.transform.position = new Vector3(6, 0);
         }
         spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
-    }
-
-    void ChangeMusic() {
-        if( currentMusic != 0 ) {
-            currentMusic -= 1;
-            Debug.Log("playing currentMusic=" + currentMusic);
-            musicPlayer.ChangeSong(currentMusic);
-        }
-    }
-
-    void PlaySfx() {
-        if( sfx != 0 ) {
-            sfx -= 1;
-            Debug.Log("playing sfx=" + sfx);
-            sfxPlayer.ChangeSong(sfx);
-        }
-    }
-
-    public void SetLineNum(int newLineNum)
-    {
-        lineNum = newLineNum;
-    }
-    public int GetLineNum()
-    {
-        return lineNum;
     }
 }

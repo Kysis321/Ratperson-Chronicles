@@ -4,10 +4,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class JoshChoiceButton : MonoBehaviour {
+public class ChoiceButton : MonoBehaviour {
 
     public string option;
-    public JoshDialogueManager box;
+    public DialogueManager box;
 
     public void SetText( string newText ) {
         this.GetComponentInChildren<TextMeshProUGUI>().text = newText;

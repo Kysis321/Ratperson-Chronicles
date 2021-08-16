@@ -7,7 +7,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 
 
-public class DialogueParser : MonoBehaviour
+public class OldDialogueParser : MonoBehaviour
 {
     //we are representing a DialogueLine. Each one of our lines has a few components to it. 
     //Each line has a name, content, pose, position, and a fifth variable which is going to be the options the player will have when given choices.
