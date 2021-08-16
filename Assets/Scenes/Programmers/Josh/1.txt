@@ -1,9 +1,3 @@
-Phoenix;Heyo;0
-0;0
-Edgeworth;content goes here;1
-1;1
-Phoenix;line 3;2
-2;2
-Edgeworth;and music doesn't change and no sfx;3
+Narrator;Rat Person the 13th. The latest in a long line of unhappy, uninspired and disenfranchised Rat people that have lived throughout the centuries prior.;0
 0;0
 End;Scene2

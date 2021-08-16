@@ -12,7 +12,7 @@ public class AudioPlayer : MonoBehaviour
     }
 
     public void ChangeSong(int clipInt) {
-        Debug.Log("changing song");
+        //*B debug.log("changing song");
         audioSource.Stop();
         audioSource.clip = audioClips[clipInt];
         audioSource.Play();

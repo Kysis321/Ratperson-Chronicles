@@ -1,0 +1,11 @@
+Rat Person;So it even has a manual and everything huh?;0
+0;0
+Narrator;With the strange scientist now unconscious, Rat Person questions whether the object in front of them could really travel through time.;0
+0;0
+Narrator;If so it would mean an out from the monotony, from the repetition, the usual 9 to 5. They could go anywhere... anywhen.;0
+0;0
+Rat Person;I don’t have anything to lose so...;0
+0;0
+Narrator;Thinking back to stories of rat people long passed, Rat Person inputs a time period and takes a leap of faith.;0
+0;0
+End;Scene8

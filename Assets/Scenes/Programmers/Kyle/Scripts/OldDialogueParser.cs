@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 
 public class OldDialogueParser : MonoBehaviour
 {
+    /* //*B
     //we are representing a DialogueLine. Each one of our lines has a few components to it. 
     //Each line has a name, content, pose, position, and a fifth variable which is going to be the options the player will have when given choices.
     struct DialogueLine
@@ -37,7 +38,7 @@ public class OldDialogueParser : MonoBehaviour
     void Start()
     {
         string file = "Assets/Scenes/Programmers/Kyle/Dialogue1";
-        string sceneNum = EditorApplication.currentScene;
+        //*B string sceneNum = EditorApplication.currentScene;
         sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
         file += sceneNum;
         file += ".txt";
@@ -136,5 +137,6 @@ public class OldDialogueParser : MonoBehaviour
         }
         return new string[0];
     }
+    */
 }
 

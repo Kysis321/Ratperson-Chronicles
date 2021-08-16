@@ -1,0 +1,5 @@
+Rat Person;*sigh*;0
+0;0
+Narrator;This was commonplace in Rat-Person's life. Rather than attending to their work responsibilities, Rat Person opts instead to insistently play flash mini games on company time.;0
+0;0
+End;Scene4

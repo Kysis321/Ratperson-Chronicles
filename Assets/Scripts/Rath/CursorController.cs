@@ -7,18 +7,18 @@ public class CursorController : MonoBehaviour
     public Texture2D cursorClicked;
     public Texture2D cursor;
 
-    private CursorControls controls;
+    //private CursorControls controls;
 
     private Camera mainCamera;
 
     private void Awake()
     {
-        ChangeCursor(cursor);
-        controls = new CursorControls();
+        //ChangeCursor(cursor);
+        //controls = new CursorControls();
         mainCamera = Camera.main;
     }
 
-    private void ChangeCursor(Texture2D cursorType)
+    /*private void ChangeCursor(Texture2D cursorType)
     {
         Cursor.SetCursor(cursorType, Vector2.zero, CursorMode.Auto);
     }
@@ -43,18 +43,21 @@ public class CursorController : MonoBehaviour
     private void StartedClick()
     {
         ChangeCursor(cursorClicked);
-        //Debug.Log("Started Click");
+        ////*B debug.log("Started Click");
     }
 
     private void EndedClick()
     {
-        //Debug.Log("Ended Click");
+        ////*B debug.log("Ended Click");
         DetectObject();
         ChangeCursor(cursor);
-    }
+    }*/
 
-    private void DetectObject()
+    public void zDetectObject(string _tag)
     {
+
+        //*B
+        /*
         //for 3D objects
         Ray ray = mainCamera.ScreenPointToRay(controls.Mouse.Position.ReadValue<Vector2>());
         RaycastHit hit;
@@ -66,7 +69,7 @@ public class CursorController : MonoBehaviour
                 {
                     hit.collider.gameObject.GetComponent<EnemyScript>().onClickEnemy(); //find the object script and execute this function
                 }
-                Debug.Log("3D Hit: " + hit.collider.tag);
+                //*B debug.log("3D Hit: " + hit.collider.tag);
             }
         }
         //for 2D objects
@@ -77,8 +80,9 @@ public class CursorController : MonoBehaviour
             {
                 hits2D.collider.gameObject.GetComponent<EnemyScript>().onClickEnemy(); //find the object script and execute this function
             }
-            Debug.Log("2D Hit: " + hits2D.collider.tag);
+            //*B debug.log("2D Hit: " + hits2D.collider.tag);
         }
+        */
 
     }
 

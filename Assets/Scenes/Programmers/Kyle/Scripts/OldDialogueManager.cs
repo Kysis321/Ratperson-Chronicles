@@ -7,6 +7,7 @@ using TMPro;
 
 public class OldDialogueManager : MonoBehaviour
 {
+    /* //*B
 
     OldDialogueParser parser;
 
@@ -150,4 +151,5 @@ public class OldDialogueManager : MonoBehaviour
         }
         spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
     }
+    */
 }

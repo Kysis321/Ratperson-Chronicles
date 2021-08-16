@@ -1,0 +1,7 @@
+Narrator;End of Act I;0
+0;0
+Narrator;Act II and III coming soon;0
+0;0
+Narrator;Press Escape to quit;0
+0;0
+End;Scene8

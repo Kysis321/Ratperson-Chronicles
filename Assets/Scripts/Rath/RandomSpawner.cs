@@ -41,7 +41,9 @@ public class RandomSpawner : MonoBehaviour
     {
         weakpointHit ++;
         spawned = true;
-        if(weakpointHit >= 10)
+        //*BB
+        if(weakpointHit >= 5)
+        //if(weakpointHit >= 10)
         {
             spawned = false;
             dies = true;
@@ -52,7 +54,7 @@ public class RandomSpawner : MonoBehaviour
 
     public void ReportMiniGameResult(bool dies)
     {
-        Debug.Log("Win, send data to analytic. Message: " + dies);
+        //*B debug.log("Win, send data to analytic. Message: " + dies);
         Analytics.CustomEvent("fightingMiniGameWin", new Dictionary<string, object>
         {
             {"fightingMiniGameBoolTestMainBranch", dies},

@@ -50,21 +50,21 @@ public class DialogueParser : MonoBehaviour {
         string sceneNum = SceneManager.GetActiveScene().name;
 
         //replaces the word "scene" with nothing
-        Debug.Log("scenenum before regex = " + sceneNum);
+        //*B //*B debug.log("scenenum before regex = " + sceneNum);
         sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
-        Debug.Log("scenenum after regex = " + sceneNum);
+        //*B debug.log("scenenum after regex = " + sceneNum);
 
         file += sceneNum;
         file += ".txt";
-        Debug.Log(file);
+        //*B //*B debug.log(file);
 
         lines = new List<DialogueLine>();
         eLines = new List<EffectsLine>();
 
         LoadDialogue(file);
 
-        Debug.Log("line0 = " + lines[0].name);
-        Debug.Log("line1 = " + lines[1].name);
+        //*B //*B debug.log("line0 = " + lines[0].name);
+        //*B //*B debug.log("line1 = " + lines[1].name);
     }
 
     void LoadDialogue( string filename ) {
@@ -101,7 +101,7 @@ public class DialogueParser : MonoBehaviour {
 
                     //this adds data from second line to effectsline
                     string[] eLineData = line.Split(';');
-                    Debug.Log(eLineData);
+                    //*B debug.log(eLineData);
                     EffectsLine eLineEntry = new EffectsLine(int.Parse(eLineData[0]), int.Parse(eLineData[1]));
                     eLines.Add(eLineEntry);
 

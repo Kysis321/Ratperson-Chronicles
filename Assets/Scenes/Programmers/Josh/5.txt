@@ -1,0 +1,5 @@
+Narrator;This sends a wave of panic over Rat Person. Realizing that they can't breathe, they shove past their boss and skitter out of the office.;0
+0;0
+Rat Person;*Ragged Breathing*;0
+0;0
+End;Scene6

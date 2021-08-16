@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if( Input.GetKeyDown("e") && playerTalking == false )
+        if( Input.GetKeyDown("d") && playerTalking == false )
         {
 
             lineNum++;
@@ -55,11 +55,18 @@ public class DialogueManager : MonoBehaviour
 
         }
 
-        if( Input.GetKeyDown("q") && lineNum > 0 )
+        if( Input.GetKeyDown("a"))
         {
-
-            lineNum--;
-            ShowDialogue();
+            if (lineNum > 0)
+            {
+                lineNum--;
+                ShowDialogue();
+            }
+            else
+            {
+                //*BB
+                // Load the previous scene, and the last line of that scene
+            }
 
         }
 
@@ -149,7 +156,7 @@ public class DialogueManager : MonoBehaviour
     void ChangeMusic() {
         if( currentMusic != 0 ) {
             currentMusic -= 1;
-            Debug.Log("playing currentMusic=" + currentMusic);
+            //*B debug.log("playing currentMusic=" + currentMusic);
             musicPlayer.ChangeSong(currentMusic);
         }
     }
@@ -157,7 +164,7 @@ public class DialogueManager : MonoBehaviour
     void PlaySfx() {
         if( sfx != 0 ) {
             sfx -= 1;
-            Debug.Log("playing sfx=" + sfx);
+            //*B debug.log("playing sfx=" + sfx);
             sfxPlayer.ChangeSong(sfx);
         }
     }

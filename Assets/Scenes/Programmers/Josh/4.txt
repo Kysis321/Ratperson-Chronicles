@@ -1,0 +1,9 @@
+Boss;Hey Rat Person. I sent you an E-mail three hours ago. How is that report of Bega coming along?;0
+0;0
+Boss;Are you playing shitty games again?;1
+0;0
+Boss;You know tha...company time...fired...no one...;1
+0;0
+Boss;Rat Person are you listening? Jeez no wonder you have been stuck in the cubical for so long. Just the bare minimum to keep the job. Sooner or later you are going to be replaced, you know that right?;0
+0;0
+End;Scene5

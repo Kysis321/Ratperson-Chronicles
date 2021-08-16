@@ -16,4 +16,21 @@ public class EnemyScript : MonoBehaviour
         spawner.Weakpoint();
         Destroy(gameObject);
     }
+
+
+
+
+    public void zBFIX()
+    {
+        var cursor = GameObject.Find("Cursorrr");
+        //cursor.GetComponent<CursorController>().zDetectObject();
+    }
+
+	private void OnMouseDown()
+	{
+        //zBFIX(transform.tag);
+
+        spawner.Weakpoint();
+        Destroy(gameObject);
+    }
 }

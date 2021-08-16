@@ -1,0 +1,11 @@
+Narrator;Rat Person in their panic, stumbles into a room with no clearly labelled department sign. After a few moments in catching their breath they can see lightning sparks and industrial sounds of tinkering occurring as they walk deeper into the room.;0
+0;0
+Rat Person;What is going on here?;0
+0;0
+Madrat;Who are you? Were you sent by the RatMasons?;0
+0;0
+Rat Person;Uhhh, no I was just trying to...;0
+0;0
+Madrat;LIES! I know you were sent to steal the TimeShuttle3000! Nevertheless, you won't be leaving here alive!;0
+0;0
+End;Scene6Fight

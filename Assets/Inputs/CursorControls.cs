@@ -1,5 +1,5 @@
 // GENERATED AUTOMATICALLY FROM 'Assets/Inputs/CursorControls.inputactions'
-
+/* //*B
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -159,3 +159,4 @@ public class @CursorControls : IInputActionCollection, IDisposable
         void OnPosition(InputAction.CallbackContext context);
     }
 }
+*/

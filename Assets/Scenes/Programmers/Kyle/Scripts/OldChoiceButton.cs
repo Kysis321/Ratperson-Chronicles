@@ -5,7 +5,7 @@ using TMPro;
 
 public class OldChoiceButton : MonoBehaviour
 {
-
+    /* //*B
     public string option;
     public OldDialogueManager box;
 
@@ -43,7 +43,9 @@ public class OldChoiceButton : MonoBehaviour
         }
         else if (command == "scene")
         {
-            Application.LoadLevel("Scene" + commandModifier);
+            //*B
+            //Application.LoadLevel("Scene" + commandModifier);
         }
     }
+    */
 }
