@@ -8,4 +8,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/A Main FInal Scene/Scenes/Main Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene1.unity
+    guid: d76cec85535536c4088986395187781f
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene2.unity
+    guid: d1ca795daaea48b4d997edf8c98b8516
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene3.unity
+    guid: bd66018093a96c2418ab56a000aedd92
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene4.unity
+    guid: f813fcb51958aac488ba9b7b6e976544
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene5.unity
+    guid: 7233e2abc09262843bfecaea0964c6dc
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene6.unity
+    guid: f0070cad6e0bfea4984db606a80c2f82
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/FightingMiniGame.unity
+    guid: 4daa8e8baea1ed24189adc06aec55409
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene7.unity
+    guid: ad9ceb3a1c557f84e81967e89f15ebe0
   m_configObjects: {}
