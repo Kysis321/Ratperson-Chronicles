@@ -150,14 +150,16 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayImages()
     {
-        background.GetComponent<Image>().sprite = background.GetComponent<BackgroundManager>().sprites[bg];
+        if( bg != 0 )
+        {
+            background.GetComponent<Image>().sprite = background.GetComponent<BackgroundManager>().sprites[bg - 1];
+        }
     }
 
     void ChangeMusic() {
         if( currentMusic != 0 ) {
-            currentMusic -= 1;
             //*B debug.log("playing currentMusic=" + currentMusic);
-            musicPlayer.ChangeSong(currentMusic);
+            musicPlayer.ChangeSong(currentMusic-1);
         }
     }
 

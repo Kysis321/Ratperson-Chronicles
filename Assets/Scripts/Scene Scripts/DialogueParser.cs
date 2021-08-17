@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class DialogueParser : MonoBehaviour {
     //we are representing a DialogueLine. Each one of our lines has a few components to it. 
-    //Each line has a name, content, pose, position, and a fifth variable which is going to be the options the player will have when given choices.
+    //Each line has a name, content, background and a fourth variable which is going to be the options the player will have when given choices.
     struct DialogueLine {
 
         public string name;
@@ -46,7 +46,7 @@ public class DialogueParser : MonoBehaviour {
     void Awake() {
         
         //this is the folder which contains the text doc
-        string file = "Assets/Scenes/A Main FInal Scene/Story";
+        string file = "Assets/Scenes/A Main FInal Scene/Story/";
         string sceneNum = SceneManager.GetActiveScene().name;
 
         //replaces the word "scene" with nothing

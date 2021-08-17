@@ -1,10 +1,23 @@
-Phoenix;Dialogue shown;0
+Boss;Hey Rat Person. I sent you an E-mail three hours ago. How is that report of Bega coming along?;1
 0;0
-Edgeworth;content goes here;1
-1;1
-Phoenix;line 3;2
-2;2
-Edgeworth;and music doesn't change and no sfx;3
+Boss;Are you playing shitty games again?;1
 0;0
-Player;Zero:line,0;Line 3:line,3;Line 1:line,1;poop:line,0
+Boss;You know tha...company time...fired...no one...;2
 0;0
+Boss;Rat Person are you listening? Jeez no wonder you have been stuck in the cubical for so long. Just the bare minimum to keep the job. Sooner or later you are going to be replaced, you know that right?;3
+0;0
+Narrator;This sends a wave of panic over Rat Person. Realizing that they can't breathe, they shove past their boss and skitter out of the office.;2
+0;0
+Rat Person;*Ragged Breathing*;2
+0;0
+Narrator;Rat Person in their panic, stumbles into a room with no clearly labelled department sign. After a few moments in catching their breath they can see lightning sparks and industrial sounds of tinkering occurring as they walk deeper into the room.;3
+0;0
+Rat Person;What is going on here?;3
+0;0
+Madrat;Who are you? Were you sent by the RatMasons?;3
+0;0
+Rat Person;Uhhh, no I was just trying to...;3
+0;0
+Madrat;LIES! I know you were sent to steal the TimeShuttle3000! Nevertheless, you won't be leaving here alive!;3
+0;0
+End;Scene3
