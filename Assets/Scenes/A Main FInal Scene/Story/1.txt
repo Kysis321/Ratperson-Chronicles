@@ -8,4 +8,4 @@ Rat Person;*sigh*;2
 0;0
 Narrator;This was commonplace in Rat-Person's life. Rather than attending to their work responsibilities, Rat Person opts instead to insistently play flash mini games on company time.;3
 0;0
-End;Scene2
+End;Scene1Platformer

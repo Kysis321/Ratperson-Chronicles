@@ -20,4 +20,4 @@ Rat Person;Uhhh, no I was just trying to...;5
 0;0
 Madrat;LIES! I know you were sent to steal the TimeShuttle3000! Nevertheless, you won't be leaving here alive!;5
 0;0
-End;Scene3
+End;Scene2Fight
