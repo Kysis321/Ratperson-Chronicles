@@ -628,23 +628,31 @@ PrefabInstance:
     - target: {fileID: 5463716464163324981, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 429162e0d4f819d459ce968fb585b1e7, type: 3}
+      objectReference: {fileID: 21300000, guid: 24f8e9c8804a28043a57cfbc81f3abfb, type: 3}
     - target: {fileID: 5463716464163324983, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
       propertyPath: sprites.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5463716464163324983, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
       propertyPath: sprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 0ca5655602080e645bbea6b32d6c8849, type: 3}
+      objectReference: {fileID: 21300000, guid: 24f8e9c8804a28043a57cfbc81f3abfb, type: 3}
     - target: {fileID: 5463716464163324983, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
       propertyPath: sprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 429162e0d4f819d459ce968fb585b1e7, type: 3}
+      objectReference: {fileID: 21300000, guid: 9fc80ea9b7d60aa41a77ae51cb4699e0, type: 3}
     - target: {fileID: 5463716464163324983, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
       propertyPath: sprites.Array.data[2]
       value: 
+      objectReference: {fileID: 21300000, guid: 44f559ba6daa6034cab55a9be97d6f96, type: 3}
+    - target: {fileID: 5463716464163324983, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
       objectReference: {fileID: 21300000, guid: cc50ddbc912f2d84b9d3de7dcbe98be8, type: 3}
+    - target: {fileID: 5463716464163324983, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: dd125ff9d9b3a214d980d119794e89e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d856d2380d23274dbd111789345e12e, type: 3}
 --- !u!1001 &5977729939505743791

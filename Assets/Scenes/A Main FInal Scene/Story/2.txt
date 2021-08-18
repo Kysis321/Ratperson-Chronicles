@@ -4,20 +4,20 @@ Boss;Are you playing shitty games again?;1
 0;0
 Boss;You know tha...company time...fired...no one...;2
 0;0
-Boss;Rat Person are you listening? Jeez no wonder you have been stuck in the cubical for so long. Just the bare minimum to keep the job. Sooner or later you are going to be replaced, you know that right?;3
+Boss;Rat Person are you listening? Jeez no wonder you have been stuck in the cubical for so long. Just the bare minimum to keep the job. Sooner or later you are going to be replaced, you know that right?;1
 0;0
-Narrator;This sends a wave of panic over Rat Person. Realizing that they can't breathe, they shove past their boss and skitter out of the office.;2
+Narrator;This sends a wave of panic over Rat Person. Realizing that they can't breathe, they shove past their boss and skitter out of the office.;3
 0;0
-Rat Person;*Ragged Breathing*;2
+Rat Person;*Ragged Breathing*;4
 0;0
-Narrator;Rat Person in their panic, stumbles into a room with no clearly labelled department sign. After a few moments in catching their breath they can see lightning sparks and industrial sounds of tinkering occurring as they walk deeper into the room.;3
+Narrator;Rat Person in their panic, stumbles into a room with no clearly labelled department sign. After a few moments in catching their breath they can see lightning sparks and industrial sounds of tinkering occurring as they walk deeper into the room.;5
 0;0
-Rat Person;What is going on here?;3
+Rat Person;What is going on here?;5
 0;0
-Madrat;Who are you? Were you sent by the RatMasons?;3
+Madrat;Who are you? Were you sent by the RatMasons?;5
 0;0
-Rat Person;Uhhh, no I was just trying to...;3
+Rat Person;Uhhh, no I was just trying to...;5
 0;0
-Madrat;LIES! I know you were sent to steal the TimeShuttle3000! Nevertheless, you won't be leaving here alive!;3
+Madrat;LIES! I know you were sent to steal the TimeShuttle3000! Nevertheless, you won't be leaving here alive!;5
 0;0
 End;Scene3
