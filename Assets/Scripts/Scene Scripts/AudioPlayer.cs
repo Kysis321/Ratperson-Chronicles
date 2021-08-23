@@ -7,7 +7,7 @@ public class AudioPlayer : MonoBehaviour
     public AudioClip[] audioClips = null;
     AudioSource audioSource;
 
-    private void Start() {
+    private void Awake() {
         audioSource = this.GetComponent<AudioSource>();
     }
 
@@ -16,5 +16,10 @@ public class AudioPlayer : MonoBehaviour
         audioSource.Stop();
         audioSource.clip = audioClips[clipInt];
         audioSource.Play();
+    }
+
+    public void StopSong()
+    {
+        audioSource.Stop();
     }
 }

@@ -157,7 +157,11 @@ public class DialogueManager : MonoBehaviour
     }
 
     void ChangeMusic() {
-        if( currentMusic != 0 ) {
+        if( currentMusic == 66 )
+        {
+            musicPlayer.StopSong();
+        } 
+        else if( currentMusic != 0 ) {
             //*B debug.log("playing currentMusic=" + currentMusic);
             musicPlayer.ChangeSong(currentMusic-1);
         }
@@ -165,9 +169,8 @@ public class DialogueManager : MonoBehaviour
 
     void PlaySfx() {
         if( sfx != 0 ) {
-            sfx -= 1;
             //*B debug.log("playing sfx=" + sfx);
-            sfxPlayer.ChangeSong(sfx);
+            sfxPlayer.ChangeSong(sfx-1);
         }
     }
 

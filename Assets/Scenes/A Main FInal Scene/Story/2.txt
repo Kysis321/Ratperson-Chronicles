@@ -1,17 +1,17 @@
 Boss;Hey Rat Person. I sent you an E-mail three hours ago. How is that report of Bega coming along?;1
-0;0
-Boss;Are you playing shitty games again?;1
+1;0
+Boss;Are you playing silly games again?;1
 0;0
 Boss;You know tha...company time...fired...no one...;2
-0;0
+2;0
 Boss;Rat Person are you listening? Jeez no wonder you have been stuck in the cubical for so long. Just the bare minimum to keep the job. Sooner or later you are going to be replaced, you know that right?;1
+1;0
+Narrator;This sends a wave of panic over Rat Person. Realizing that they can't breathe, they shove past their boss and skitter out of the office.;1
 0;0
-Narrator;This sends a wave of panic over Rat Person. Realizing that they can't breathe, they shove past their boss and skitter out of the office.;3
-0;0
-Rat Person;*Ragged Breathing*;4
-0;0
-Narrator;Rat Person in their panic, stumbles into a room with no clearly labelled department sign. After a few moments in catching their breath they can see lightning sparks and industrial sounds of tinkering occurring as they walk deeper into the room.;5
-0;0
+Rat Person;*Ragged Breathing*;3
+2;1
+Narrator;Rat Person in their panic, stumbles into a room with no clearly labelled department sign. After a few moments in catching their breath they can see lightning sparks and industrial sounds of tinkering occurring as they walk deeper into the room.;4
+3;2
 Rat Person;What is going on here?;5
 0;0
 Madrat;Who are you? Were you sent by the RatMasons?;5

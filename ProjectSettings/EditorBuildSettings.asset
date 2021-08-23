@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Main Menu.unity
+    guid: 28ec9acb6970f2f468424f8839fe2e39
+  - enabled: 1
     path: Assets/Scenes/A Main FInal Scene/Scenes/Scene1.unity
     guid: d76cec85535536c4088986395187781f
-  - enabled: 1
-    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene1Platformer.unity
-    guid: ff92c49b4fd0dde4cb94f44d4b14e137
   - enabled: 1
     path: Assets/Scenes/A Main FInal Scene/Scenes/Scene2.unity
     guid: f5325cc7626efe547bf44119d197afd2
@@ -20,19 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/A Main FInal Scene/Scenes/Scene3.unity
     guid: 1d3b63e661dc7d642b58f36415d12e94
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/A Main FInal Scene/Scenes/Scene4.unity
     guid: f813fcb51958aac488ba9b7b6e976544
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene4Platformer.unity
+    guid: ff92c49b4fd0dde4cb94f44d4b14e137
+  - enabled: 1
     path: Assets/Scenes/A Main FInal Scene/Scenes/Scene5.unity
     guid: 7233e2abc09262843bfecaea0964c6dc
+  - enabled: 1
+    path: Assets/Scenes/A Main FInal Scene/Scenes/Credit.unity
+    guid: d2de4f639038cdb4aaf110fa8de1370a
   - enabled: 0
-    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene6.unity
-    guid: f0070cad6e0bfea4984db606a80c2f82
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene7.unity
-    guid: ad9ceb3a1c557f84e81967e89f15ebe0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/A Main FInal Scene/Scenes/Scene8.unity
-    guid: 7273b09f82c45fa4788e9aa690467e2a
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

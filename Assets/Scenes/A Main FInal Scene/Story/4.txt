@@ -1,0 +1,43 @@
+;;1
+0;1
+Narrator;Dazed yet alive. Rat Person the 13th was dropped somewhere in France in the year 1888. It had worked.;1
+1;0
+Vincent Rat Gogh;It can be like that. So caught up in the mundane that they miss the extraordinary events which take place right in front of them.;1
+0;0
+Vincent Rat Gogh;Usually I wouldn't be so bold as to talk to a rat standing naked in the cold winter breeze. But then usually that Rat wouldn't have just appeared out of thin air.;1
+0;0
+;;2
+0;2
+Vincent Rat Gogh;Marvelous! From the future. I'd hardly be as willing to trust the handy work of a deranged man who had just assaulted me.;8
+0;0
+Rat Person;Well I didn't really have much choice in the matter.;8
+0;0
+Vincent Rat Gogh;Ha ha haÅc I suppose you're right.;8
+0;0
+Rat Person;Vincent. My coming hereÅc it wasn't a complete mistake. When I was younger my parents would always brag to me about the famous rats that we were related to. And the one that always piqued my interest was you.;8
+0;0
+Vincent Rat Gogh;You don't say... I'm famous! So in a twist of fate, you may be my great great great great great great great great great great great grandrat?;8
+0;0
+Rat Person;Something like that.;8
+0;0
+Narrator;As the night went on Vincent found himself more enamored by Rat Person, pressing more and more as he sought to learn everything he could about the distant future.;8
+0;0
+;Many drink later...;3
+66;0
+;;4
+0;3
+Boss-Rat;Where's that Bega report Rat Person!;5
+0;0
+Madrat;You can't hide from me Rat Person!;6
+0;0
+Madrat;I'm coming for you!;6
+0;0
+Madrat;I want my equipment back!;6
+0;0
+Madrat;Vincent won't be able to hide you from me!;6
+0;0
+Madrat;Oooo a cookie!;6
+0;0
+Madrat;I'LL BE SEEING YOU SOON RAT PERSON!;7
+0;0
+End;Scene4Platformer

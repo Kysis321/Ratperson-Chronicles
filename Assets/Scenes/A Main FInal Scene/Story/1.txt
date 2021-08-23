@@ -1,11 +1,11 @@
 ;;1
-0;0
+1;0
 Narrator;Rat Person the 13th. The latest in a long line of unhappy, uninspired and disenfranchised Rat people that have lived throughout the centuries prior.;2
-0;0
+2;0
 Narrator;They are seen working hard on their typical 9-5 job. Oblivious to the life altering event that was rapidly approaching.;2
 0;0
 Rat Person;*sigh*;2
+0;1
+Narrator;This was commonplace in Rat-Person's life. Rather than attending to their work responsibilities, Rat Person opts instead to insistently play flash mini games on company time.;2
 0;0
-Narrator;This was commonplace in Rat-Person's life. Rather than attending to their work responsibilities, Rat Person opts instead to insistently play flash mini games on company time.;3
-0;0
-End;Scene1Platformer
+End;Scene2

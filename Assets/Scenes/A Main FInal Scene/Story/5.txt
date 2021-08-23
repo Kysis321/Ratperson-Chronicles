@@ -1,0 +1,35 @@
+Rat Person;Vincent! Vincent! They're coming for me! That Mad Rat Scientist... Somehow they know where I am!;1
+0;0
+Vincent Rat Gogh;Why did you come here Rat Person?;1
+0;0
+Rat Person;Wha..? I already told you. I wanted to meet yo-;1
+0;0
+Vincent Rat Gogh;BUT WHY? WHO CARES IF I'M FAMOUS SOME TIME IN THE FUTURE? What did you think I would know that's so important?;1
+0;0
+Rat Person;I... I wanted to know.;1
+0;0
+Vincent Rat Gogh;KNOW WHAT?;1
+0;0
+Rat Person;WHY IT SUCKS! Why does everything suck? All of the time. I hate it. Everyday it's all the same. Nothing happens, nothing happens but I'm so tired. I want to know if there's something I can do? If there's a way to stop it? To break the cycleÅc;1
+0;0
+Vincent Rat Gogh;Why would I know. You came here to find an answer. What makes you think I can fix anything?;1
+0;0
+Rat Person;I don't know.;1
+0;0
+Vincent Rat Gogh;Get out.;1
+0;0
+Rat Person;What?;1
+0;0
+Vincent Rat Gogh;GET OUT!!!;1
+0;0
+;;2
+0;0
+Narrator;While looking out over a certain church in the countryside. Rat Person frets as they question whether it will ever get better.;2
+0;0
+Narrator;Whether they'll ever be able to break the spiral that ever so often swallows them whole.;2
+0;0
+Narrator;With Madrat's arrival seeming imminent. Rat Person fears that they'll be resigned to their fate.;2
+0;0
+;;3
+1;0
+End;Main Menu
